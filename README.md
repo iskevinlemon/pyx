@@ -1,4 +1,4 @@
-# pyx - Overview
+# Overview of pyx
 pyx (Python eXtra) is a Python web framework that aims to make web development much simpler.
 
 # Running locally
