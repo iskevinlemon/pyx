@@ -4,7 +4,7 @@ import os
 
 def pyx_start_server(port):
     
-    # Get the absolute path to the 'views' folder
+    # Path to the 'views' folder
     views_dir = os.path.join(os.path.dirname(__file__), 'views')
 
     # Create a custom handler to specify the directory and handle the root path
