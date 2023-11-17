@@ -5,11 +5,11 @@ pyx (Python eXtra) is a Python web framework that aims to make web development m
 Clone this repo and run <code>core.py</code>.
 
 # pyx project structure
--<b>views</b><br/>
---index.html<br/>
--<b>lib</b><br/>
---core.py<br/>
--main.py<br/>
+.<b>views</b><br/>
+..index.html<br/>
+.<b>lib</b><br/>
+..core.py<br/>
+.main.py<br/>
 
 # Simple pyx app
 ```py
