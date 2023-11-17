@@ -1,4 +1,4 @@
-from core import start_server
+from lib.core import start_server
 
 port = 4000
 
