@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import os
 
-def pyx_start_server(port):
+def start_server(port):
     
     # Path to the 'views' folder
     views_dir = os.path.join(os.path.dirname(__file__), 'views')

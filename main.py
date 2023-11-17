@@ -1,5 +1,4 @@
-from core import pyx_start_server
+from core import start_server
 
 port = 3000
-
-pyx_start_server(port)
+start_server(port)
