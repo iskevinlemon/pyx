@@ -2,26 +2,27 @@ import http.server
 import socketserver
 import os
 
-# Default port at 3000
-PORT = 8000
+def pyx_start_server(port):
+    
+    # Get the absolute path to the 'views' folder
+    views_dir = os.path.join(os.path.dirname(__file__), 'views')
 
-# Path to the 'views' folder
-views_dir = os.path.join(os.path.dirname(__file__), 'views')
+    # Create a custom handler to specify the directory and handle the root path
+    class CustomHandler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=views_dir, **kwargs)
 
-# Custom handler to specify the directory and handle the root path
-class CustomHandler(http.server.SimpleHTTPRequestHandler):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=views_dir, **kwargs)
+        def do_GET(self):
+            # Handle requests to the root path by serving index.html
+            if self.path == '/':
+                self.path = '/index.html'
+            return super().do_GET()
 
-    def do_GET(self):
-        # Requests to the root path by serving index.html
-        if self.path == '/':
-            self.path = '/index.html'
-        return super().do_GET()
+    # Use socketserver to set up the server with the custom handler
+    with socketserver.TCPServer(("", port), CustomHandler) as httpd:
 
-# Socketserver to set up the server with the custom handler
-with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
-    print(f"Serving at port {PORT}")
+        # Logging message
+        print(f"Server running on port {port}")
 
-    # Start the server
-    httpd.serve_forever()
+        # Start the server
+        httpd.serve_forever()
