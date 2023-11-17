@@ -1,6 +1,6 @@
 from lib.core import start_server
 
-port = 4000
+port = 3000
 
 # Specify the data as dictionary
 data = {
