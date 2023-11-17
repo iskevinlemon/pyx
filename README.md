@@ -7,7 +7,7 @@ Clone this repo and run <code>core.py</code>.
 # pyx project structure
 -<b>views</b><br/>
 --index.html<br/>
--<b>views</b><br/>
+-<b>lib</b><br/>
 --core.py<br/>
 -main.py<br/>
 
