@@ -15,6 +15,14 @@ def bind_to_html(html_content, **kwargs):
 
     return html_content
 
+
+'''
+# TODO:
+Add a custom parameter that user can specify for templating.
+
+In main.py:
+start_server(port, data, templating="@")
+'''
 def start_server(port, data):
     # Path to the 'views' folder
     views_dir = os.path.join(os.path.dirname(__file__), 'views')
