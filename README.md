@@ -7,10 +7,10 @@ Visit <code>localhost:3000</code>
 
 # pyx project structure
 <pre>
-pyx_project
-├──lib              # library for pyx
+<b>pyx_project</b>
+├──<b>lib</b>       # library for pyx
 │  ├──core.py       # core functions for pyx
-└──views            # folder for all your HTML pages
+└──<b>views</b>     # folder for all your HTML pages
 │  ├──index.html    # default page
 │  ├──error.html    # error 404 page
 ├──main.py          # app controller/ logic
