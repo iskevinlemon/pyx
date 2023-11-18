@@ -2,7 +2,7 @@
 pyx (Python eXtra) is a Python web framework that aims to make web development much simpler.
 
 # Running locally
-Clone this repo and run <code>core.py</code>.<br/>
+Clone this repo and run <code>main.py</code>.<br/>
 Visit <code>localhost:3000</code>
 
 # pyx project structure
