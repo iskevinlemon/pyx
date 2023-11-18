@@ -1,6 +1,6 @@
 # main.py
 
-from lib.core import start_server
+from pyx.core import start_server
 
 port = 3000
 

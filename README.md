@@ -8,7 +8,7 @@ Visit <code>localhost:3000</code>
 # pyx project structure
 <pre>
 <b>pyx_project</b>
-├──lib              # library for pyx
+├──pyx              # library for pyx
 │  ├──core.py       # core functions for pyx
 └──views            # folder for all your HTML pages
 │  ├──index.html    # default page
@@ -20,15 +20,20 @@ Visit <code>localhost:3000</code>
 ```py
 # main.py
 
-from core import start_server
+from pyx.core import start_server
 
 port = 3000
 
 # Specify the data as dictionary
 data = {
+    # Custom defined data
+    "page_title": "Welcome to pyx",
     "fruit": "apple",
     "car": "toyota",
-    "error_message": "The page you have requested cannot be found"
+
+    # Error pages
+    "not_found_error_message": "The page you have requested cannot be found",
+    "forbidden_error_message": "You do not have permission to access this page"
 }
 
 # Start the server with the specified port and pass in the data dictionary
