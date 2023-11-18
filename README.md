@@ -13,7 +13,7 @@ Visit <code>localhost:3000</code>
 └──views            # folder for all your HTML pages
 │  ├──index.html    # default page
 │  ├──error.html    # error 404 page
-├──main.py          # app controller/ logic
+└──main.py          # app controller/ logic
 </pre>
 
 # Simple pyx app
