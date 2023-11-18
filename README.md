@@ -6,6 +6,7 @@ Clone this repo and run <code>main.py</code>.<br/>
 Visit <code>localhost:3000</code>
 
 # pyx project structure
+<pre>
 pyx_project
 ├── lib              # library for pyx
 │  ├── core.py       # core functions for pyx
@@ -13,6 +14,8 @@ pyx_project
 │   ├── index.html   # default page
 │   ├── error.html   # error 404 page
 ├── main.py          # app controller/ logic
+</pre>
+
 # Simple pyx app
 ```py
 # main.py
