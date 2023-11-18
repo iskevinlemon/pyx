@@ -24,8 +24,12 @@ In main.py:
 start_server(port, data, templating="@")
 '''
 def start_server(port, data):
-    # Path to the 'views' folder
-    views_dir = os.path.join(os.path.dirname(__file__), 'views')
+
+    # Path to the 'views' folder (not in use)
+    # views_dir = os.path.join(os.path.dirname(__file__), 'views')
+
+    # Path to the 'views' folder (new)
+    views_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'views')
 
     # Create a custom handler to specify the directory and handle the root path
     class CustomHandler(http.server.SimpleHTTPRequestHandler):
