@@ -42,6 +42,7 @@ def start_server(port, data):
             # TODO: implement custom routing
             
             # TODO: implement forbidden pages and etc... 
+            
             # Error page
             else:
 
@@ -63,4 +64,6 @@ def start_server(port, data):
 
         # Start the server
         httpd.serve_forever()
-        webbrowser.open_new('views/index.index.html')
+
+        # No need for this as default view is / route (views/index.html)
+        # webbrowser.open_new('views/index.index.html')
