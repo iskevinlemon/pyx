@@ -1,6 +1,7 @@
 import http.server
 import socketserver
 import os
+import webbrowser
 
 # Function to bind values to HTML
 def bind_to_html(html_content, **kwargs):
@@ -39,7 +40,8 @@ def start_server(port, data):
                 self.wfile.write(content.encode('utf-8'))
 
             # TODO: implement custom routing
-
+            
+            # TODO: implement forbidden pages and etc... 
             # Error page
             else:
 
@@ -49,7 +51,7 @@ def start_server(port, data):
 
                 # Replace placeholders with data values (if needed for custom error message)
                 content = bind_to_html(html_content, **data)
-
+            
                 self.send_response(404)
                 self.end_headers()
                 self.wfile.write(content.encode('utf-8'))
@@ -61,3 +63,4 @@ def start_server(port, data):
 
         # Start the server
         httpd.serve_forever()
+        webbrowser.open_new('views/index.index.html')
