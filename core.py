@@ -6,7 +6,13 @@ import webbrowser
 # Function to bind values to HTML
 def bind_to_html(html_content, **kwargs):
     for key, value in kwargs.items():
+
+        # templating with {variable}
         html_content = html_content.replace(f"{{{key}}}", str(value))
+
+        # templating with @{variable}
+        # html_content = html_content.replace(f"@{{{key}}}", str(value))
+
     return html_content
 
 def start_server(port, data):
