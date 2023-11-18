@@ -6,13 +6,13 @@ Clone this repo and run <code>main.py</code>.<br/>
 Visit <code>localhost:3000</code>
 
 # pyx project structure
-pyx_project
-|--lib
-   |--core.py
-|--views
-   |--index.html
-   |--error.html
-|--main.py
+pyx_project<br/>
+|--lib<br/>
+   |--core.py<br/>
+|--views<br/>
+   |--index.html<br/>
+   |--error.html<br/>
+|--main.py<br/>
 
 # Simple pyx app
 ```py
